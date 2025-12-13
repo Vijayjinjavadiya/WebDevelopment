@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramora Technologies | IoT, BLE & Mobile Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <img src="images/logo.jpg" alt="R">
+                </div>
+                RAMORA <span class="logo-accent">TECHOLOGIES</span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#hire-experts" class="nav-link">Hire</a> <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link-cta">Contact Us</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About Us</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#hire-experts" class="mobile-link">Hire Developers</a>
+            <a href="#portfolio" class="mobile-link">Portfolio</a>
+            <a href="#contact" class="mobile-link mobile-link-cta">Contact Us</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container hero-content">
+            <h2 class="hero-subtitle">Innovating Tomorrow</h2>
+            <h1 class="hero-title">
+                Building The Future with <br>
+                <span class="hero-highlight">IoT & Embedded Intelligence</span>
+            </h1>
+            <p class="hero-description">Ramora Technologies specializes in cutting-edge IoT solutions, BLE applications, and custom embedded systems designed to scale your business.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item"><div class="stat-number" id="stat-projects">25+</div><div class="stat-label">Projects Done</div></div>
+                <div class="stat-item"><div class="stat-number" id="stat-clients">25+</div><div class="stat-label">Happy Clients</div></div>
+                <div class="stat-item"><div class="stat-number" id="stat-exp">5+</div><div class="stat-label">Years Exp</div></div>
+                <div class="stat-item"><div class="stat-number" id="stat-team">10+</div><div class="stat-label">Engineers</div></div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">End-to-end development services tailored to the needs of modern connected businesses.</p>
+            </div>
+            <div class="services-grid">
+                <a href="service-details.html?id=mobile" class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title">Mobile App Development</h3>
+                    <p class="service-description">Native Android & iOS solutions covering the full lifecycle...</p>
+                </a>
+                <a href="service-details.html?id=iot" class="service-card">
+                    <div class="service-icon">📡</div>
+                    <h3 class="service-title">IoT Solutions</h3>
+                    <p class="service-description">Complete IoT ecosystems enabling remote device control...</p>
+                </a>
+                <a href="service-details.html?id=firmware" class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Firmware & Hardware</h3>
+                    <p class="service-description">Expertise in complex embedded systems and electronic design...</p>
+                </a>
+                <a href="service-details.html?id=ble" class="service-card">
+                    <div class="service-icon">📶</div>
+                    <h3 class="service-title">BLE App Development</h3>
+                    <p class="service-description">Specialized Bluetooth Classic and BLE connectivity...</p>
+                </a>
+                <a href="service-details.html?id=qa" class="service-card">
+                    <div class="service-icon">✔</div>
+                    <h3 class="service-title">Quality Assurance</h3>
+                    <p class="service-description">Comprehensive testing services to identify defects early...</p>
+                </a>
+                <a href="service-details.html?id=integration" class="service-card">
+                    <div class="service-icon">☁</div>
+                    <h3 class="service-title">System Integration</h3>
+                    <p class="service-description">Seamlessly connecting diverse systems and technologies...</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+<!-- HIRE DEVELOPERS SECTION -->
+    <section id="hire-experts" class="hire-section-main">
+        <div class="container">
+            <div class="section-header text-center" style="text-align:center;">
+                <h2 class="section-title">Hire Dedicated Developers</h2>
+                <p class="section-description">Select a technology domain to find your perfect expert.</p>
+            </div>
+
+            <div class="hire-tabs-wrapper">
+                <div class="hire-tabs">
+                    <button class="hire-tab active" data-target="mobile">Mobile Apps</button>
+                    <button class="hire-tab" data-target="iot">IoT & Embedded</button>
+                    <button class="hire-tab" data-target="backend">Backend & Cloud</button>
+                    <button class="hire-tab" data-target="frontend">Frontend Web</button>
+                </div>
+            </div>
+
+            <div id="hire-dynamic-grid" class="hire-grid-dynamic">
+                </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-description">A glimpse into the innovations we've delivered.</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="ble">BLE</button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <div class="portfolio-item" data-category="iot">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Smart Home Controller</h4>
+                        <span class="portfolio-category">IoT Solution</span>
+                    </div>
+                </div>
+                 <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Fitness Tracker</h4>
+                        <span class="portfolio-category">Mobile App</span>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">Ready to start your project? Get in touch with us today.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card"><div class="info-icon">📍</div><div><h4 class="info-title">Our Location</h4><p class="info-text">The Spire 2, 8th Floor, Office 817, 150 Feet Ring Road, Rajkot, Gujarat 360005</p></div></div>
+                    <div class="info-card"><div class="info-icon">📞</div><div><h4 class="info-title">Call Us</h4><p class="info-text">+91 93160 41187</p></div></div>
+                    <div class="info-card"><div class="info-icon">✉</div><div><h4 class="info-title">Email Us</h4><p class="info-text">info@ramoradev.com</p></div></div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.037626966847!2d70.7628834!3d22.3144413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c9b990999999%3A0x1234567890abcdef!2sThe%20Spire%202!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3 class="form-title">Send Message</h3>
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mldqwblw" method="POST">
+                        <div class="form-row">
+                            <div class="form-group"><label class="form-label">Name</label><input type="text" name="name" class="form-input" required></div>
+                            <div class="form-group"><label class="form-label">Email</label><input type="email" name="email" class="form-input" required></div>
+                        </div>
+                        <div class="form-group"><label class="form-label">Subject</label><input type="text" name="subject" class="form-input" required></div>
+                        <div class="form-group"><label class="form-label">Message</label><textarea name="message" rows="4" class="form-textarea" required></textarea></div>
+                        <button type="submit" class="btn btn-submit">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><div class="logo-icon"><img src="images/logo.jpg" alt="R"></div>RAMORA <span class="logo-accent">TECH</span></a>
+                    <p class="footer-description">Empowering businesses through next-gen IoT, Embedded Systems, and Mobile Applications.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul><li><a href="#services">IoT Development</a></li><li><a href="#services">Mobile Apps</a></li><li><a href="#services">Embedded Firmware</a></li></ul>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul><li><a href="#about">About Us</a></li><li><a href="#contact">Contact</a></li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© <span id="year"></span> Ramora Technologies Pvt Ltd. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ramora Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Page Specific Styles */
+        .about-hero {
+            background: #0a192f;
+            padding: 120px 0 60px;
+            text-align: center;
+            color: white;
+        }
+        
+        /* Team Section Styles */
+        .team-section { padding: 80px 0; background: #f9fafb; }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+
+        .team-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px rgba(0,0,0,0.1); }
+
+        .team-photo-container {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: #e5e7eb;
+        }
+
+        .team-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures photos don't stretch */
+        }
+
+        .team-info { padding: 24px; }
+
+        .team-name { font-size: 20px; font-weight: 700; color: #0a192f; margin-bottom: 4px; }
+        .team-role { font-size: 14px; color: #06b6d4; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
+
+        .linkedin-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #0077b5;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .linkedin-btn:hover { background: #005582; }
+
+        /* Why Us Grid */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+        .why-card {
+            padding: 32px;
+            border-radius: 8px;
+            background: white;
+            border-left: 4px solid #06b6d4;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .why-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">RAMORA <span class="logo-accent">TECH</span></a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about-us.html" class="nav-link" style="color:#06b6d4;">About Us</a> <a href="ramora.html#services" class="nav-link">Services</a>
+                <a href="index.html.html#portfolio" class="nav-link">Portfolio</a>
+                <a href="index.html" class="nav-link-cta">Contact Us</a>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about-us.html" class="mobile-link" style="color:#06b6d4;">About Us</a>
+            <a href="index.html" class="mobile-link">Services</a>
+            <a href="index.html" class="mobile-link mobile-link-cta">Contact Us</a>
+        </div>
+    </nav>
+
+    <header class="about-hero">
+        <div class="container">
+            <h1 style="font-size: 48px; margin-bottom: 16px;">About Ramora Technologies</h1>
+            <p style="font-size: 18px; color: #8892b0;">Innovating at the intersection of Hardware and Software.</p>
+        </div>
+    </header>
+
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Who We Are</h2>
+                    <p class="about-paragraph">
+                        Ramora Technologies is a premier embedded systems and mobile application development firm based in Rajkot, India. We don't just write code; we engineer solutions. 
+                    </p>
+                    <p class="about-paragraph">
+                        Our journey began with a simple mission: to bridge the gap between complex hardware and user-friendly software. Today, we serve clients globally, delivering robust IoT ecosystems and seamless mobile experiences.
+                    </p>
+                </div>
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 25px rgba(0,0,0,0.1);">
+                    <img src="images/team.jpg" alt="Our Office" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f3f4f6; padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Work With Us?</h2>
+                <p class="section-description">What sets us apart in the crowded tech landscape.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3 style="font-size: 20px; margin-bottom: 12px; color: #0a192f;">End-to-End Expertise</h3>
+                    <p style="color: #6b7280;">Most companies do software OR hardware. We do both. From PCB design to Mobile App UI, we handle the full product lifecycle.</p>
+                </div>
+                <div class="why-card">
+                    <h3 style="font-size: 20px; margin-bottom: 12px; color: #0a192f;">Rapid Prototyping</h3>
+                    <p style="color: #6b7280;">We use agile methodologies to turn your concept into a working MVP faster than traditional agencies.</p>
+                </div>
+                <div class="why-card">
+                    <h3 style="font-size: 20px; margin-bottom: 12px; color: #0a192f;">Transparent Communication</h3>
+                    <p style="color: #6b7280;">No hidden costs or technical jargon. We keep you updated at every stage of development with clear reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-description">The minds behind the machines.</p>
+            </div>
+
+            <div class="team-grid">
+                
+                <div class="team-card">
+                    <div class="team-photo-container">
+                        <img src="images/member1.jpg" alt="Team Member" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Your Name</h3>
+                        <p class="team-role">Founder & CEO</p>
+                        <a href="https://linkedin.com" target="_blank" class="linkedin-btn">
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-container">
+                        <img src="images/member2.jpg" alt="Team Member" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">John Doe</h3>
+                        <p class="team-role">Lead Firmware Engineer</p>
+                        <a href="https://linkedin.com" target="_blank" class="linkedin-btn">
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo-container">
+                        <img src="images/member3.jpg" alt="Team Member" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Jane Smith</h3>
+                        <p class="team-role">Mobile App Developer</p>
+                        <a href="https://linkedin.com" target="_blank" class="linkedin-btn">
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>© <span id="year"></span> Ramora Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
