@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =============================== -->
+    <!-- BASIC META CONFIGURATION        -->
+    <!-- =============================== -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive scaling -->
+    <title>Project Details | Ramora Technologies</title> <!-- Page title -->
+
+    <!-- External main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- =============================== -->
+    <!-- PAGE-SPECIFIC INTERNAL STYLES   -->
+    <!-- Only affects Project Details   -->
+    <!-- =============================== -->
+    <style>
+        /* HERO SECTION (Top banner with background image + overlay) */
+        .project-hero {
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.95)), url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 160px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Category label shown above project title */
+        .project-meta-tag {
+            background: #06b6d4;
+            color: #0a192f;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        /* Main case study section wrapper */
+        .case-study-section {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        /* Two-column layout: content + sidebar */
+        .case-grid {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 64px;
+        }
+
+        /* Section headings inside case content */
+        .case-content h2 {
+            font-size: 28px;
+            color: #0a192f;
+            margin-bottom: 24px;
+            font-weight: 700;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 12px;
+        }
+
+        /* Paragraph styling for challenge & solution */
+        .case-content p {
+            color: #4b5563;
+            margin-bottom: 24px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Box that wraps key features list */
+        .feature-box {
+            background: #f9fafb;
+            padding: 32px;
+            border-radius: 12px;
+            margin-top: 32px;
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Feature list grid */
+        .feature-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        /* Individual feature row */
+        .feature-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        /* Check icon styling */
+        .check-icon {
+            color: #06b6d4;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 2px;
+        }
+
+        /* =============================== */
+        /* PROJECT SIDEBAR STYLES           */
+        /* =============================== */
+        .project-sidebar {
+            background: #f3f4f6;
+            padding: 32px;
+            border-radius: 8px;
+            height: fit-content;
+            position: sticky; /* Sticks while scrolling */
+            top: 100px;
+        }
+
+        /* Sidebar data blocks */
+        .sidebar-item { margin-bottom: 24px; }
+        .sidebar-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #6b7280;
+            letter-spacing: 1px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .sidebar-value {
+            font-size: 16px;
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        /* Technology tags container */
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tech-tag {
+            background: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #4b5563;
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Responsive layout for mobile */
+        @media (max-width: 768px) {
+            .case-grid { grid-template-columns: 1fr; }
+            .feature-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =============================== -->
+    <!-- NAVIGATION BAR                  -->
+    <!-- =============================== -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">RAMORA <span class="logo-accent">TECHNOLOGIES</span></a>
+
+            <!-- Desktop navigation links -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#portfolio" class="nav-link">Back to Portfolio</a>
+                <a href="index.html#contact" class="nav-link-cta">Start Project</a>
+            </div>
+
+            <!-- Mobile hamburger button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <!-- Mobile navigation menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html#portfolio" class="mobile-link">Back to Portfolio</a>
+            <a href="index.html#contact" class="mobile-link mobile-link-cta">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- =============================== -->
+    <!-- HERO / PROJECT INTRO SECTION    -->
+    <!-- =============================== -->
+    <header class="project-hero">
+        <div class="container">
+            <!-- Project category (filled via JS) -->
+            <span id="proj-category" class="project-meta-tag">Loading...</span>
+
+            <!-- Project title -->
+            <h1 id="proj-title" style="font-size: 48px; margin-bottom: 16px;">Loading Project...</h1>
+
+            <!-- Short project subtitle -->
+            <p id="proj-subtitle" style="font-size: 20px; color: #cbd5e1; max-width: 700px; margin: 0 auto;">
+                Please wait while we fetch the case study.
+            </p>
+        </div>
+    </header>
+
+    <!-- =============================== -->
+    <!-- CASE STUDY CONTENT SECTION      -->
+    <!-- =============================== -->
+    <section class="case-study-section">
+        <div class="container">
+            <div class="case-grid">
+                
+                <!-- MAIN CONTENT AREA -->
+                <div class="case-content">
+
+                    <!-- Challenge description -->
+                    <div id="challenge-section">
+                        <h2>The Challenge</h2>
+                        <p id="proj-challenge">Loading content...</p>
+                    </div>
+
+                    <!-- Solution description -->
+                    <div id="solution-section" style="margin-top: 48px;">
+                        <h2>The Solution</h2>
+                        <p id="proj-solution">Loading content...</p>
+                    </div>
+
+                    <!-- Feature list -->
+                    <div class="feature-box">
+                        <h3 style="color: #0a192f; font-size: 20px; margin-bottom: 24px;">Key Features Delivered</h3>
+                        <ul class="feature-list" id="proj-features">
+                            <!-- Feature items injected via JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SIDEBAR AREA -->
+                <aside class="project-sidebar">
+                    <div class="sidebar-item">
+                        <span class="sidebar-label">Industry</span>
+                        <span class="sidebar-value" id="meta-industry">--</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="sidebar-label">Services</span>
+                        <span class="sidebar-value" id="meta-service">--</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="sidebar-label">Technology Stack</span>
+                        <div class="tech-tags" id="meta-tech">
+                            <!-- Tech tags injected via JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- CTA inside sidebar -->
+                    <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb;">
+                        <span class="sidebar-label">Have a similar idea?</span>
+                        <a href="index.html#contact" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 12px; display:block;">Get a Quote</a>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- FOOTER                          -->
+    <!-- =============================== -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>© <span id="year"></span> Ramora Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =============================== -->
+    <!-- MAIN JAVASCRIPT FILE            -->
+    <!-- Handles dynamic data injection -->
+    <!-- =============================== -->
+    <script src="script.js"></script>
+</body>
+</html>
