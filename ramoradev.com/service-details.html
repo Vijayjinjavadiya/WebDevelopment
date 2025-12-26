@@ -5,180 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Details | Ramora Technologies</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* =========================================
-           PAGE SPECIFIC STYLES
-           ========================================= */
-        .service-hero {
-            background: #0a192f;
-            padding: 120px 0 60px;
-            text-align: center;
-            color: white;
-        }
-        .service-hero h1 { font-size: 48px; margin-bottom: 16px; color: #06b6d4; }
-        .service-hero p { max-width: 700px; margin: 0 auto; font-size: 18px; color: #8892b0; }
-        
-        .detail-section { padding: 80px 0; }
-        .detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; }
-        
-        /* Tech Stack Box */
-        .tech-stack-box {
-            background: #f3f4f6; padding: 32px; border-radius: 8px;
-            border-left: 4px solid #06b6d4;
-        }
-        .tech-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
-        .tech-badge { 
-            background: white; padding: 8px 16px; border-radius: 20px; 
-            font-size: 14px; font-weight: bold; color: #0a192f;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        /* Success Stories */
-        .project-preview { margin-top: 48px; }
-        .project-card-row { display: flex; gap: 24px; margin-top: 24px; flex-wrap: wrap; }
-        .project-mini-card {
-            flex: 1; min-width: 250px; background: white; padding: 24px; border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #eee;
-        }
-        .project-mini-card h4 { color: #06b6d4; margin-bottom: 8px; font-weight: 700; }
-
-        /* HIRE SECTION STYLES */
-        .hire-section {
-            padding: 80px 0;
-            background-color: #f9fafb; /* Light gray background to separate sections */
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .hire-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-        }
-
-        .hire-card {
-            background: #ffffff;
-            padding: 32px;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-            transition: all 0.3s ease;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        .hire-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            border-color: #06b6d4;
-        }
-
-        .hire-card::before {
-            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
-            background: #06b6d4; opacity: 0; transition: opacity 0.3s;
-        }
-        .hire-card:hover::before { opacity: 1; }
-
-        .hire-role { font-size: 20px; font-weight: 700; color: #0a192f; margin-bottom: 12px; }
-        .hire-desc { color: #6b7280; font-size: 14px; margin-bottom: 24px; line-height: 1.6; }
-        
-        .btn-hire {
-            display: inline-block; padding: 10px 24px; border: 2px solid #06b6d4;
-            color: #06b6d4; font-weight: 700; border-radius: 4px;
-            text-decoration: none; transition: all 0.3s; font-size: 14px;
-        }
-        .btn-hire:hover { background: #06b6d4; color: white; }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .detail-grid { grid-template-columns: 1fr; }
-            .hire-grid { grid-template-columns: 1fr; }
-            .project-card-row { flex-direction: column; }
-        }
-    </style>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- NAVBAR -->
     <nav id="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">RAMORA <span class="logo-accent">TECH</span></a>
+            <div class="logo-icon">
+                <img src="images/Artboard 3 copy@3x-100.jpg" alt="R">
+            </div>
+
             <div class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="index.html#services" class="nav-link">Back to Services</a>
+                <a href="index.html#services" class="nav-link">All Services</a>
                 <a href="index.html#contact" class="nav-link-cta">Contact Us</a>
             </div>
+
             <button id="mobile-menu-btn" class="mobile-menu-btn">
-                <span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
             </button>
         </div>
+
         <div id="mobile-menu" class="mobile-menu">
-            <a href="index.html" class="mobile-link">Back to Services</a>
-            <a href="index.html.html#contact" class="mobile-link mobile-link-cta">Contact Us</a>
-            <a href="index.html.html" class="mobile-link">Home</a>
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html#services" class="mobile-link">Back to Services</a>
+            <a href="index.html#contact" class="mobile-link mobile-link-cta">Contact Us</a>
         </div>
     </nav>
 
+    <!-- HERO -->
     <header class="service-hero">
         <div class="container">
             <h1 id="page-title">Loading...</h1>
-            <p id="page-desc">Please wait while we fetch the service details.</p>
+            <p id="page-subtitle" class="hero-subtitle-text">
+                Please wait while we load the details.
+            </p>
         </div>
     </header>
 
-    <section class="detail-section">
+    <!-- OVERVIEW -->
+    <section class="section-overview">
         <div class="container">
-            <div class="detail-grid">
-                
-                <div class="content-side">
-                    <h2>Overview</h2>
-                    <p id="full-description" style="line-height: 1.8; color: #4b5563; margin-bottom: 30px;">
-                        </p>
+            <div class="overview-grid">
 
-                    <div class="project-preview">
-                        <h2>Success Stories</h2>
-                        <div class="project-card-row" id="project-container">
-                            </div>
-                    </div>
+                <div class="overview-content">
+                    <p id="overview-text" class="text-heading"></p>
+                    <p id="overviewsub-text" class="text-body"></p>
                 </div>
 
-                <div class="sidebar">
-                    <div class="tech-stack-box">
-                        <h3>Technologies Used</h3>
-                        <div class="tech-list" id="tech-container">
-                            </div>
-                    </div>
-                    
-                    <div style="margin-top: 32px; background: #0a192f; padding: 32px; border-radius: 8px; color: white; text-align: center;">
-                        <h3 style="color: white;">Need this service?</h3>
-                        <p style="margin: 16px 0; color: #8892b0;">Let's discuss how we can build this for you.</p>
-                        <a href="index.html" class="btn btn-primary" style="display:inline-block;">Start Project</a>
-                    </div>
+                <div class="overview-image">
+                    <img id="overview-img" alt="Service overview image">
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="hire-section">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 48px;">
-                <h2 style="color: #0a192f; font-size: 32px; margin-bottom: 16px;">Hire Experts on Demand</h2>
-                <p style="color: #6b7280; max-width: 600px; margin: 0 auto;">
-                    Scale your team instantly. Select the specific roles you need for your project and get started immediately.
-                </p>
-            </div>
+   
 
-            <div id="hire-grid" class="hire-grid">
-                </div>
+    <!-- SERVICE OFFERINGS -->
+    <section class="service-offerings">
+        <div class="container">
+            <h2 class="section-title">
+                CUSTOM <span id="serviceName">MOBILE</span> SERVICES WE DELIVER
+            </h2>
+
+            <div class="service-grid" id="serviceOfferings">
+                <!-- Cards injected via JS -->
+            </div>
         </div>
     </section>
 
+    <!-- PROCESS -->
+    
+    <section class="lifecycle-wrap">
+        <div class="container">
+          <h2 id="lifecycle-title" class="lifecycle-title"></h2>
+        </div>
+      
+      
+        <div class="lifecycle-inner">
+          <!-- SVG -->
+          <svg class="lifecycle-path"
+          viewBox="0 0 1000 2000"
+          preserveAspectRatio="none">
+     
+       <defs>
+         <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+           <stop offset="0%" stop-color="#38bdf8"/>
+           <stop offset="100%" stop-color="#22c55e"/>
+         </linearGradient>
+       </defs>
+     
+       <path id="flowPath"
+             d="
+               M500 0
+     
+               C500 150, 200 150, 200 300
+               C200 450, 800 450, 800 600
+               C800 750, 200 750, 200 900
+               C200 1050, 800 1050, 800 1200
+               C800 1350, 200 1350, 200 1500
+               C200 1650, 500 1650, 750 1900
+             "
+             fill="none"
+             stroke="url(#gradient)"
+             stroke-width="4"
+             stroke-linecap="round"
+             stroke-dasharray="8 10"/>
+     </svg>
+     
+      
+          <!-- Cards -->
+          <div id="lifecycle-container"></div>
+        </div>
+      </section>
+      
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="container" style="text-align: center;">
+        <div class="container center">
             <p>© <span id="year"></span> Ramora Technologies. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="services.js"></script>
     <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
 </body>
 </html>

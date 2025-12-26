@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
                 <div class="logo-icon">
-                    <img src="images/logo.jpg" alt="R">
+                    <img src="images/Artboard 3 copy@3x-100.jpg" alt="R">
                 </div>
-                RAMORA <span class="logo-accent">TECHOLOGIES</span>
+               
             </a>
 
             <div class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="about-us.html" class="nav-link">About Us</a>
                 <a href="#services" class="nav-link">Services</a>
-                <a href="#hire-experts" class="nav-link">Hire</a> <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#hire-experts" class="nav-link">Hire</a> 
+                <a href="#portfolio" class="nav-link">Portfolio</a>
                 <a href="#contact" class="nav-link-cta">Contact Us</a>
             </div>
 
@@ -31,7 +33,7 @@
 
         <div id="mobile-menu" class="mobile-menu">
             <a href="#home" class="mobile-link">Home</a>
-            <a href="#about" class="mobile-link">About Us</a>
+            <a href="about-us.html" class="mobile-link">About Us</a>
             <a href="#services" class="mobile-link">Services</a>
             <a href="#hire-experts" class="mobile-link">Hire Developers</a>
             <a href="#portfolio" class="mobile-link">Portfolio</a>
@@ -47,7 +49,10 @@
                 Building The Future with <br>
                 <span class="hero-highlight">IoT & Embedded Intelligence</span>
             </h1>
-            <p class="hero-description">Ramora Technologies specializes in cutting-edge IoT solutions, BLE applications, and custom embedded systems designed to scale your business.</p>
+            <p class="hero-description">
+                Ramora Technologies specializes in cutting-edge IoT solutions, BLE applications, 
+                and custom embedded systems designed to scale your business.
+            </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Get Started</a>
                 <a href="#services" class="btn btn-secondary">Our Services</a>
@@ -62,8 +67,6 @@
         </div>
     </section>
 
-    
-
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
@@ -74,38 +77,27 @@
                 <a href="service-details.html?id=mobile" class="service-card">
                     <div class="service-icon">📱</div>
                     <h3 class="service-title">Mobile App Development</h3>
-                    <p class="service-description">Native Android & iOS solutions covering the full lifecycle...</p>
+                    <p class="service-description">Native Android & iOS solutions covering the full lifecycle.</p>
                 </a>
                 <a href="service-details.html?id=iot" class="service-card">
                     <div class="service-icon">📡</div>
                     <h3 class="service-title">IoT Solutions</h3>
-                    <p class="service-description">Complete IoT ecosystems enabling remote device control...</p>
+                    <p class="service-description">Complete IoT ecosystems enabling remote device control.</p>
                 </a>
                 <a href="service-details.html?id=firmware" class="service-card">
                     <div class="service-icon">🔧</div>
                     <h3 class="service-title">Firmware & Hardware</h3>
-                    <p class="service-description">Expertise in complex embedded systems and electronic design...</p>
+                    <p class="service-description">Expertise in complex embedded systems and electronic design.</p>
                 </a>
                 <a href="service-details.html?id=ble" class="service-card">
                     <div class="service-icon">📶</div>
                     <h3 class="service-title">BLE App Development</h3>
-                    <p class="service-description">Specialized Bluetooth Classic and BLE connectivity...</p>
-                </a>
-                <a href="service-details.html?id=qa" class="service-card">
-                    <div class="service-icon">✔</div>
-                    <h3 class="service-title">Quality Assurance</h3>
-                    <p class="service-description">Comprehensive testing services to identify defects early...</p>
-                </a>
-                <a href="service-details.html?id=integration" class="service-card">
-                    <div class="service-icon">☁</div>
-                    <h3 class="service-title">System Integration</h3>
-                    <p class="service-description">Seamlessly connecting diverse systems and technologies...</p>
+                    <p class="service-description">Specialized Bluetooth Classic and BLE connectivity.</p>
                 </a>
             </div>
         </div>
     </section>
     
-<!-- HIRE DEVELOPERS SECTION -->
     <section id="hire-experts" class="hire-section-main">
         <div class="container">
             <div class="section-header text-center" style="text-align:center;">
@@ -127,34 +119,106 @@
         </div>
     </section>
 
+    <!-- portfolio -->
+
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Our Portfolio</h2>
-                <p class="section-description">A glimpse into the innovations we've delivered.</p>
+                <p class="section-description">Real-world solutions engineered for safety, tracking, and efficiency.</p>
             </div>
+            
             <div class="portfolio-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="iot">IoT</button>
-                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-                <button class="filter-btn" data-filter="ble">BLE</button>
+                <button class="filter-btn" data-filter="iot">IoT & Asset Tracking</button>
+                <button class="filter-btn" data-filter="marine">Marine & Underwater</button>
+                <button class="filter-btn" data-filter="safety">Safety Systems</button>
             </div>
+
             <div class="portfolio-grid" id="portfolio-grid">
-                <div class="portfolio-item" data-category="iot">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                
+                <a href="project-details.html?id=asset-tracking" class="portfolio-item" data-category="iot">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);"></div>
                     <div class="portfolio-overlay">
-                        <h4 class="portfolio-title">Smart Home Controller</h4>
-                        <span class="portfolio-category">IoT Solution</span>
+                        <img src="images/assest_tracking.png" alt="A">
+                        <h4 class="portfolio-title">Asset Tracking Solution</h4>
+                        <span class="portfolio-category">Industrial IoT</span>
                     </div>
-                </div>
-                 <div class="portfolio-item" data-category="mobile">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                </a>
+
+                <a href="project-details.html?id=diver-safety" class="portfolio-item" data-category="marine">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0f172a 0%, #0891b2 100%);"></div>
                     <div class="portfolio-overlay">
-                        <h4 class="portfolio-title">Fitness Tracker</h4>
-                        <span class="portfolio-category">Mobile App</span>
+                        <h4 class="portfolio-title">Underwater Diver Safety System</h4>
+                        <span class="portfolio-category">Communication System</span>
                     </div>
-                </div>
-                </div>
+                </a>
+
+                <a href="project-details.html?id=temp-pill" class="portfolio-item" data-category="safety">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #be123c 0%, #fb7185 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Ingestible Temp Monitoring Pill</h4>
+                        <span class="portfolio-category">MedTech IoT</span>
+                    </div>
+                </a>
+
+                <a href="project-details.html?id=geofence" class="portfolio-item" data-category="iot">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #059669 0%, #34d399 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Intelligent Geofence System</h4>
+                        <span class="portfolio-category">Logistics & Tracking</span>
+                    </div>
+                </a>
+
+                <a href="project-details.html?id=railroad" class="portfolio-item" data-category="safety">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #d97706 0%, #fcd34d 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Sub-Centimeter Positioning</h4>
+                        <span class="portfolio-category">Worker Safety (UK)</span>
+                    </div>
+                </a>
+
+                <a href="project-details.html?id=crab-logger" class="portfolio-item" data-category="marine">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0e7490 0%, #22d3ee 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Depth & Temp Logger</h4>
+                        <span class="portfolio-category">Crab Harvesting</span>
+                    </div>
+                </a>
+
+                <a href="project-details.html?id=fishermen-gear" class="portfolio-item" data-category="marine">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Fishermen Gear Accountability</h4>
+                        <span class="portfolio-category">Inventory System</span>
+                    </div>
+                </a>
+
+                <a href="project-details.html?id=beacon" class="portfolio-item" data-category="iot">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4b5563 0%, #9ca3af 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Lightweight Asset Beacon</h4>
+                        <span class="portfolio-category">Extended Battery Life</span>
+                    </div>
+                </a>
+
+                <a href="project-details.html?id=mtb-timing" class="portfolio-item" data-category="iot">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #7c2d12 0%, #f97316 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Portable Timing System</h4>
+                        <span class="portfolio-category">Mountain Bike Racing</span>
+                    </div>
+                </a>
+                
+                 <a href="project-details.html?id=lign-light" class="portfolio-item" data-category="marine">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0284c7 0%, #38bdf8 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Lign Light Oxygen Indicator</h4>
+                        <span class="portfolio-category">Diver Safety</span>
+                    </div>
+                </a>
+
+            </div>
         </div>
     </section>
 
@@ -166,13 +230,32 @@
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="info-card"><div class="info-icon">📍</div><div><h4 class="info-title">Our Location</h4><p class="info-text">The Spire 2, 8th Floor, Office 817, 150 Feet Ring Road, Rajkot, Gujarat 360005</p></div></div>
-                    <div class="info-card"><div class="info-icon">📞</div><div><h4 class="info-title">Call Us</h4><p class="info-text">+91 93160 41187</p></div></div>
-                    <div class="info-card"><div class="info-icon">✉</div><div><h4 class="info-title">Email Us</h4><p class="info-text">info@ramoradev.com</p></div></div>
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4 class="info-title">Our Location</h4>
+                            <p class="info-text">The Spire 2, 8th Floor, Rajkot, Gujarat 360005</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4 class="info-title">Call Us</h4>
+                            <p class="info-text">+91 93160 41187</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✉</div>
+                        <div>
+                            <h4 class="info-title">Email Us</h4>
+                            <p class="info-text">info@ramoradev.com</p>
+                        </div>
+                    </div>
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.037626966847!2d70.7628834!3d22.3144413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c9b990999999%3A0x1234567890abcdef!2sThe%20Spire%202!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0075325238645!2d70.7648505750698!3d22.315554879675638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c99f081a8c53%3A0xc38e1d3882cdeb5!2sRamora%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1766424093990!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
+
                 <div class="contact-form-wrapper">
                     <h3 class="form-title">Send Message</h3>
                     <form class="contact-form" id="contact-form" action="https://formspree.io/f/mldqwblw" method="POST">
@@ -193,16 +276,23 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="logo"><div class="logo-icon"><img src="images/logo.jpg" alt="R"></div>RAMORA <span class="logo-accent">TECH</span></a>
+                    <a href="#" class="logo">RAMORA <span class="logo-accent">TECHNOLOGIES</span></a>
                     <p class="footer-description">Empowering businesses through next-gen IoT, Embedded Systems, and Mobile Applications.</p>
                 </div>
                 <div class="footer-links">
                     <h4 class="footer-heading">Services</h4>
-                    <ul><li><a href="#services">IoT Development</a></li><li><a href="#services">Mobile Apps</a></li><li><a href="#services">Embedded Firmware</a></li></ul>
+                    <ul>
+                        <li><a href="#services">IoT Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Embedded Firmware</a></li>
+                    </ul>
                 </div>
                 <div class="footer-links">
                     <h4 class="footer-heading">Company</h4>
-                    <ul><li><a href="#about">About Us</a></li><li><a href="#contact">Contact</a></li></ul>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom"><p>© <span id="year"></span> Ramora Technologies Pvt Ltd. All rights reserved.</p></div>
