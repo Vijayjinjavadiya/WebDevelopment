@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramora Technologies | IoT, BLE & Mobile Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Archivo+Narrow:wght@300;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -38,6 +40,12 @@
             <a href="#hire-experts" class="mobile-link">Hire Developers</a>
             <a href="#portfolio" class="mobile-link">Portfolio</a>
             <a href="#contact" class="mobile-link mobile-link-cta">Contact Us</a>
+            <button class="mobile-menu-btn">
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+            </button>
+            
         </div>
     </nav>
 
@@ -67,6 +75,98 @@
         </div>
     </section>
 
+    <!-- BIG ANGLED HERO (Concept -> Production) -->
+
+<section class="section-concept-angled">
+    <div class="concept-inner container">
+      <div class="concept-left animate-on-scroll">
+        <div class="eyebrow">How It Works</div>
+        <h1 class="concept-title">
+          From Concept<br>
+          <span>to Production</span>
+        </h1>
+        <p class="concept-lead">
+          We simplify complex product development — rapid prototyping, engineering for scale,
+          and production-grade support. Build faster, test earlier, launch sooner.
+        </p>
+        <div class="concept-ctas">
+          <a href="#contact" class="btn btn-primary">Start a Project</a>
+          <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
+      </div>
+  
+      <div class="concept-right">
+        <div class="concept-media animate-on-scroll" id="conceptMedia">
+          <img src="images/homepage1.png" alt="Concept to Production" />
+          <!-- floating micro-cards -->
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Why work with-->
+  <section class="why-us">
+    <div class="container">
+      
+      <h2 class="why-title">Why Work With Us?</h2>
+      <p class="why-subtitle">
+        We combine engineering discipline, transparency, and real-world problem solving
+        to deliver scalable IoT & technology solutions.
+      </p>
+  
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="images/team_icon.jpg" alt="Team Icon">
+          </div>
+          <h3>Well-Balanced Team</h3>
+          <p>Deep expertise across embedded systems, firmware, hardware & cloud — building solutions end-to-end.</p>
+        </div>
+      
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="images/Workflow.jpg" alt="Workflow Icon">
+          </div>
+          <h3>Workflow Transparency</h3>
+          <p>Milestone-based execution with crystal-clear communication, reporting, and accountability.</p>
+        </div>
+      
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="images/Domain_Expertise.jpg" alt="Domain Icon">
+          </div>
+          <h3>Domain Expertise</h3>
+          <p>Experience in Marine, Industrial IoT, Healthcare, Sports Tech, and Field-Ready Deployment.</p>
+        </div>
+      
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="images/Comprehensive_Consulting.jpg" alt="Consulting Icon">
+          </div>
+          <h3>Comprehensive Consulting</h3>
+          <p>Guidance across concept validation, hardware feasibility, technology stack, and deployment strategy.</p>
+        </div>
+      
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="images/Customer-Centric_Approach.jpg" alt="Customer Icon">
+          </div>
+          <h3>Customer-Centric Approach</h3>
+          <p>We prioritize usability, battery efficiency, cost optimization, and long-term reliability.</p>
+        </div>
+      
+        <div class="why-cta">
+          <h3>Ready to Build Something?</h3>
+          <a href="#contact" class="why-btn">Talk To Our Experts →</a>
+        </div>
+      
+      </div>
+      
+      </div>
+    </div>
+  </section>
+   
+
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
@@ -75,22 +175,30 @@
             </div>
             <div class="services-grid">
                 <a href="service-details.html?id=mobile" class="service-card">
-                    <div class="service-icon">📱</div>
+                    <div class="service-icon">
+                        <img src="images/mobile_development.png" alt="Customer Icon">
+                      </div>
                     <h3 class="service-title">Mobile App Development</h3>
                     <p class="service-description">Native Android & iOS solutions covering the full lifecycle.</p>
                 </a>
                 <a href="service-details.html?id=iot" class="service-card">
-                    <div class="service-icon">📡</div>
+                    <div class="service-icon">
+                        <img src="images/iot_devlopment.png" alt="Customer Icon">
+                      </div>
                     <h3 class="service-title">IoT Solutions</h3>
                     <p class="service-description">Complete IoT ecosystems enabling remote device control.</p>
                 </a>
                 <a href="service-details.html?id=firmware" class="service-card">
-                    <div class="service-icon">🔧</div>
+                    <div class="service-icon">
+                        <img src="images/firmware_development.png" alt="Customer Icon">
+                      </div>
                     <h3 class="service-title">Firmware & Hardware</h3>
                     <p class="service-description">Expertise in complex embedded systems and electronic design.</p>
                 </a>
                 <a href="service-details.html?id=ble" class="service-card">
-                    <div class="service-icon">📶</div>
+                    <div class="service-icon">
+                        <img src="images/Ble_devlopmentpng.png" alt="Customer Icon">
+                      </div>
                     <h3 class="service-title">BLE App Development</h3>
                     <p class="service-description">Specialized Bluetooth Classic and BLE connectivity.</p>
                 </a>
@@ -98,12 +206,129 @@
         </div>
     </section>
     
+
+     <!-- LIFECYCLE / TIMELINE -->
+  <section id ="project-managment" class="section-timeline-visual">
+    <div class="container">
+      <h2 class="timeline-heading animate-on-scroll">PROJECT MANAGEMENT METHODOLOGY</h2>
+      <div class="tl-items">
+       <P>
+        To manage a globally distributed international team, the Scrum agile framework was implemented.
+         Sprint-based project management methodology with daily scrums allowed the team to follow the development plan and stay flexible in the face of unexpected roadblocks. 
+         The client-side scrum master provided access to Jira and used it to distribute the roles, manage resources and track the tasks. 
+         This cohesive approach enabled the team to successfully address the challenges of the project.
+       </P>
+      </div>
+      <div class="tl-img">
+        <img src="images/project-managment.png" alt="Concept to Production" />
+        <!-- floating micro-cards -->
+      </div>
+    </div>
+  </section>
+   
+<!--tech stck-->
+<section id = "tech-stack" class="tech-section">
+    <div class="container">
+        <h2 class="section-title">Our Tech Stack</h2>
+        <p class="tech-subtitle">Hardware to software, we build products end-to-end </p>
+    <!-- 3 ROW MOVING TECH -->
+<div class="tech-marquee">
+
+    <!-- ROW 1 -->
+    <div class="marquee-row">
+      <div class="marquee-track">
+        <img src="images/logos/espressif.jpeg">
+        <img src="images/logos/STM32.jpeg">
+        <img src="images/logos/rtos.jpeg">
+        <img src="images/logos/arduino.jpeg">
+        <img src="images/logos/ble.jpeg">
+        <img src="images/logos/mqti.jpeg">
+        <img src="images/logos/loRaWAN.jpeg">
+        <img src="images/logos/Flutter.jpeg">
+        <img src="images/logos/react js.jpeg">
+        <img src="images/logos/angular.jpeg">
+
+        <img src="images/logos/222-2224799_react-native-development-react-native-logo-png.png">
+        <img src="images/logos/raspberrypi.jpeg">
+        <img src="images/logos/nordic.png">
+        <img src="images/logos/swift.jpeg">
+        <img src="images/logos/java1.jpeg">
+        <img src="images/logos/c.jpeg">
+        <img src="images/logos/react js.jpeg">
+        <img src="images/logos/c++.png">
+        <img src="images/logos/python.webp">
+        <img src="images/logos/kotlin.jpeg">
+      </div>
+    </div>
+  
+    <!-- ROW 2 (reverse direction) -->
+    <div class="marquee-row reverse">
+      <div class="marquee-track">
+        <img src="images/logos/222-2224799_react-native-development-react-native-logo-png.png">
+        <img src="images/logos/raspberrypi.jpeg">
+        <img src="images/logos/nordic.png">
+        <img src="images/logos/swift.jpeg">
+        <img src="images/logos/java1.jpeg">
+        <img src="images/logos/c.jpeg">
+        <img src="images/logos/react js.jpeg">
+        <img src="images/logos/c++.png">
+        <img src="images/logos/python.webp">
+        <img src="images/logos/kotlin.jpeg">
+        <img src="images/logos/loRaWAN.jpeg">
+
+        <img src="images/logos/mqti.jpeg">
+        <img src="images/logos/ble.jpeg">
+        <img src="images/logos/arduino.jpeg">       
+        <img src="images/logos/web-development-icon-vector.jpg" alt="">
+        <img src="images/logos/java1.jpeg">
+        <img src="images/logos/applw.png" alt="apple">
+        <img src="images/iot_devlopment.png" alt="">
+        <img src="images/logos/android-logo-android-icon-free-free-vector.jpg" alt="">
+      </div>
+    </div>
+  
+    <!-- ROW 3 (slower) -->
+    <div class="marquee-row slow">
+      <div class="marquee-track">
+        <img src="images/logos/loRaWAN.jpeg">
+        <img src="images/logos/mqti.jpeg">
+        <img src="images/logos/ble.jpeg">
+        <img src="images/logos/arduino.jpeg">       
+        <img src="images/logos/web-development-icon-vector.jpg" alt="">
+        <img src="images/logos/java1.jpeg">
+        <img src="images/logos/applw.png" alt="apple">
+        <img src="images/iot_devlopment.png" alt="">
+        <img src="images/logos/android-logo-android-icon-free-free-vector.jpg" alt="">
+
+        <img src="images/logos/espressif.jpeg">
+        <img src="images/logos/STM32.jpeg">
+        <img src="images/logos/rtos.jpeg">
+        <img src="images/logos/arduino.jpeg">
+        <img src="images/logos/ble.jpeg">
+        <img src="images/logos/mqti.jpeg">
+        <img src="images/logos/loRaWAN.jpeg">
+        <img src="images/logos/Flutter.jpeg">
+        <img src="images/logos/react js.jpeg">
+        <img src="images/logos/angular.jpeg">
+      </div>
+    </div>
+  
+  </div>
+  
+
+  </section>
+  
+
+  
     <section id="hire-experts" class="hire-section-main">
         <div class="container">
-            <div class="section-header text-center" style="text-align:center;">
-                <h2 class="section-title">Hire Dedicated Developers</h2>
-                <p class="section-description">Select a technology domain to find your perfect expert.</p>
+            <div class="hire-experts" style="text-align:center;">
+                <h2 class="hire-title">Hire Dedicated Developers</h2>
             </div>
+            <div class="hire-experts" style="text-align:center;">
+                <p class="hero-subtitle">Select a technology domain to find your perfect expert.</p>
+            </div>
+           
 
             <div class="hire-tabs-wrapper">
                 <div class="hire-tabs">
@@ -134,87 +359,115 @@
                 <button class="filter-btn" data-filter="marine">Marine & Underwater</button>
                 <button class="filter-btn" data-filter="safety">Safety Systems</button>
             </div>
+            <div class="portfolio-grid case-layout" id="portfolio-grid">
 
-            <div class="portfolio-grid" id="portfolio-grid">
-                
                 <a href="project-details.html?id=asset-tracking" class="portfolio-item" data-category="iot">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);"></div>
+                    
+                    <div class="portfolio-image">
+                        <img src="images/assets.jpg" alt="Asset Tracking">
+                    </div>
                     <div class="portfolio-overlay">
-                        <img src="images/assest_tracking.png" alt="A">
                         <h4 class="portfolio-title">Asset Tracking Solution</h4>
+                        <span class="portfolio-subtitle"> Real-time tracking ecosystem for industrial fleets and warehouse assets with GPS + BLE telemetry, automated location logs, and alert-based monitoring for operational transparency.</span>
                         <span class="portfolio-category">Industrial IoT</span>
+                        <button class="learn-btn">Learn More →</button>
+
                     </div>
                 </a>
 
                 <a href="project-details.html?id=diver-safety" class="portfolio-item" data-category="marine">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0f172a 0%, #0891b2 100%);"></div>
+                      <div class="portfolio-image">
+                        <img src="images/Underwater_Diver _System.jpg" alt="Asset Tracking">
+                      </div>
                     <div class="portfolio-overlay">
                         <h4 class="portfolio-title">Underwater Diver Safety System</h4>
+                        <span class="portfolio-subtitle">Acoustic communication + sensor telemetry system for divers, enabling emergency beacons, oxygen/pressure monitoring, and surface-to-diver communication even in low-visibility environments.</span>
                         <span class="portfolio-category">Communication System</span>
-                    </div>
-                </a>
-
-                <a href="project-details.html?id=temp-pill" class="portfolio-item" data-category="safety">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #be123c 0%, #fb7185 100%);"></div>
-                    <div class="portfolio-overlay">
-                        <h4 class="portfolio-title">Ingestible Temp Monitoring Pill</h4>
-                        <span class="portfolio-category">MedTech IoT</span>
+                        <button class="learn-btn">Learn More →</button>
                     </div>
                 </a>
 
                 <a href="project-details.html?id=geofence" class="portfolio-item" data-category="iot">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #059669 0%, #34d399 100%);"></div>
+                     <div class="portfolio-image">
+                       <img src="images/intelligent_Geofence.jpg" alt="Asset Tracking">
+                     </div>
                     <div class="portfolio-overlay">
                         <h4 class="portfolio-title">Intelligent Geofence System</h4>
+                        <span class="portfolio-subtitle">Location enforcement and zone-entry automation with configurable geofences, event triggers, and theft/abuse detection for high-value asset logistics and workforce management.</span>
                         <span class="portfolio-category">Logistics & Tracking</span>
+                        <button class="learn-btn">Learn More →</button>
                     </div>
                 </a>
 
                 <a href="project-details.html?id=railroad" class="portfolio-item" data-category="safety">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #d97706 0%, #fcd34d 100%);"></div>
+                  <div class="portfolio-image">
+                    <img src="images/sub-centimeter.jpg" alt="Asset Tracking">
+                  </div>
                     <div class="portfolio-overlay">
                         <h4 class="portfolio-title">Sub-Centimeter Positioning</h4>
+                        <span class="portfolio-subtitle">UWB + inertial fusion platform delivering sub-centimeter accuracy for railway workers, enabling hazard proximity alerts and predictive risk analytics for on-track operations.</span>
                         <span class="portfolio-category">Worker Safety (UK)</span>
+                        <button class="learn-btn">Learn More →</button>
                     </div>
                 </a>
 
                 <a href="project-details.html?id=crab-logger" class="portfolio-item" data-category="marine">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0e7490 0%, #22d3ee 100%);"></div>
+                  <div class="portfolio-image">
+                    <img src="images/depth-temperture.jpg" alt="Asset Tracking">
+                  </div>
                     <div class="portfolio-overlay">
                         <h4 class="portfolio-title">Depth & Temp Logger</h4>
+                        <span class="portfolio-subtitle">Battery-optimized data logger for commercial fishing sectors, capturing depth, temperature, and dive duration profiles to support marine research and equipment efficiency.</span>
                         <span class="portfolio-category">Crab Harvesting</span>
+                        <button class="learn-btn">Learn More →</button>
                     </div>
                 </a>
 
                 <a href="project-details.html?id=fishermen-gear" class="portfolio-item" data-category="marine">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);"></div>
+                  <div class="portfolio-image">
+                    <img src="images/Fishermen-Gear-Accountability.jpg" alt="Asset Tracking">
+                  </div>
                     <div class="portfolio-overlay">
                         <h4 class="portfolio-title">Fishermen Gear Accountability</h4>
+                        <span class="portfolio-subtitle">RFID/BLE-tagged gear ecosystem built for coastal fleets to reduce equipment loss, automate inventory, and improve retrieval tracking across fishing zones.</span>
                         <span class="portfolio-category">Inventory System</span>
+                        <button class="learn-btn">Learn More →</button>
                     </div>
                 </a>
 
                 <a href="project-details.html?id=beacon" class="portfolio-item" data-category="iot">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4b5563 0%, #9ca3af 100%);"></div>
+                  <div class="portfolio-image">
+                    <img src="images/Lightweight Asset Beacon.jpg" alt="Asset Tracking">
+                  </div>
                     <div class="portfolio-overlay">
                         <h4 class="portfolio-title">Lightweight Asset Beacon</h4>
+                        <span class="portfolio-subtitle">Ultra-low-power location beacon for equipment and container tracking, built with custom firmware and radio optimization for multi-year field deployment.</span>
                         <span class="portfolio-category">Extended Battery Life</span>
+                        <button class="learn-btn">Learn More →</button>
                     </div>
                 </a>
 
                 <a href="project-details.html?id=mtb-timing" class="portfolio-item" data-category="iot">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #7c2d12 0%, #f97316 100%);"></div>
+                  <div class="portfolio-image">
+                    <img src="images/Portable Timing System.jpg" alt="Asset Tracking">
+                  </div>
                     <div class="portfolio-overlay">
                         <h4 class="portfolio-title">Portable Timing System</h4>
+                        <span class="portfolio-subtitle">Portable checkpoint timing unit for mountain bike races featuring mesh-sync nodes, live leaderboard updates, and ruggedized outdoor performance.</span>
                         <span class="portfolio-category">Mountain Bike Racing</span>
+                        <button class="learn-btn">Learn More →</button>
                     </div>
                 </a>
                 
                  <a href="project-details.html?id=lign-light" class="portfolio-item" data-category="marine">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0284c7 0%, #38bdf8 100%);"></div>
+                  <div class="portfolio-image">
+                    <img src="images/Lign Light Oxygen Indicator.jpg" alt="Asset Tracking">
+                  </div>
                     <div class="portfolio-overlay">
                         <h4 class="portfolio-title">Lign Light Oxygen Indicator</h4>
+                        <span class="portfolio-subtitle">Wearable O₂ indication device for underwater operations, delivering live oxygen state signals and low-threshold alerts to surface operators and divers.</span>
                         <span class="portfolio-category">Diver Safety</span>
+                         <button class="learn-btn">Learn More →</button>
                     </div>
                 </a>
 
@@ -222,10 +475,93 @@
         </div>
     </section>
 
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="faq-subtitle">Got questions? We’ve got answers.</p>
+    
+        <div class="faq-grid">
+    
+          <div class="faq-item">
+            <button class="faq-question">What services do you offer? <span>+</span></button>
+            <div class="faq-answer">
+              We build IoT products, embedded firmware, BLE communication systems, and mobile apps for real-world deployments.
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">Do you work with startups or onwly big companies? <span>+</span></button>
+            <div class="faq-answer">
+              Both. We support early-stage prototypes, MVP builds, as well as enterprise-scale deployments.
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">How much does a project cost? <span>+</span></button>
+            <div class="faq-answer">
+              Pricing depends on complexity. Projects typically start from ₹50K for MVPs and scale as needed.
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">Can you help with hardware & manufacturing? <span>+</span></button>
+            <div class="faq-answer">
+              Yes, we handle PCB design, BOM selection, and manufacturing partner assistance on request.
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">Do you sign NDA before starting? <span>+</span></button>
+            <div class="faq-answer">
+              Absolutely. Client confidentiality and IP ownership are our top priority.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Who owns the source code, hardware design, and intellectual property after the project? <span>+</span></button>
+            <div class="faq-answer">
+              You own 100% of the IP, source code, firmware, PCB design files, and documentation once the project is completed. All deliverables are fully transferred to you.
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">Can you develop the complete product from concept to production? <span>+</span></button>
+            <div class="faq-answer">
+              Yes — we handle end-to-end development: ideation, hardware feasibility, embedded firmware, mobile app, cloud integration, prototyping, testing, and field deployment.
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">How do you estimate timeline and cost before starting the project? <span>+</span></button>
+            <div class="faq-answer">
+              After understanding requirements, we prepare a milestone-based plan with scope, timeline, and cost breakdown. You only pay per milestone with transparent progress tracking.
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">Do you help with long-term support and product upgrades? <span>+</span></button>
+            <div class="faq-answer">
+              Absolutely. We provide post-deployment support, firmware upgrades, performance optimization, cloud scaling, and AMC models as per project needs.
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">What communication and reporting process do you follow during development? <span>+</span></button>
+            <div class="faq-answer">
+              We maintain weekly update calls, milestone reports, and shared project boards (Jira/Notion/Trello). You see real progress, commits, and builds during development.
+            </div>
+          </div>
+          
+    
+        </div>
+      </div>
+    </section>
+    
+
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Us</h2>
+            <div class="contact-title">
+                <h2 class="contact-title">CONTACT US!</h2>
                 <p class="section-description">Ready to start your project? Get in touch with us today.</p>
             </div>
             <div class="contact-grid">
@@ -245,7 +581,7 @@
                         </div>
                     </div>
                     <div class="info-card">
-                        <div class="info-icon">✉</div>
+                        <div class="info-icon">📮</div>
                         <div>
                             <h4 class="info-title">Email Us</h4>
                             <p class="info-text">info@ramoradev.com</p>
@@ -272,33 +608,50 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="logo">RAMORA <span class="logo-accent">TECHNOLOGIES</span></a>
-                    <p class="footer-description">Empowering businesses through next-gen IoT, Embedded Systems, and Mobile Applications.</p>
-                </div>
-                <div class="footer-links">
-                    <h4 class="footer-heading">Services</h4>
-                    <ul>
-                        <li><a href="#services">IoT Development</a></li>
-                        <li><a href="#services">Mobile Apps</a></li>
-                        <li><a href="#services">Embedded Firmware</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4 class="footer-heading">Company</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom"><p>© <span id="year"></span> Ramora Technologies Pvt Ltd. All rights reserved.</p></div>
+    <footer id="footer" class="footer">
+      <div class="footer-topline"></div>
+    
+      <div class="container footer-container">
+    
+        <div class="footer-col footer-brand">
+          <a href="#" class="footer-logo">RAMORA <span>TECHNOLOGIES</span></a>
+          <p>Engineering IoT hardware, firmware & cross-platform applications with precision and trust.</p>
         </div>
+    
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">IoT Development</a></li>
+            <li><a href="#services">Embedded Firmware</a></li>
+            <li><a href="#portfolio">Product Engineering</a></li>
+            <li><a href="#services">Mobile Apps</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#hire-experts">Hire Developers</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Support</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-col footer-contact">
+          <h4>Let’s Build Together</h4>
+          <p>📞 +91 98765 43210</p>
+          <p>📍 Shastri Nagar, Dharam Nagar, Rajkot, Gujarat</p>
+          <p>📩 hello@ramoratech.com</p>
+          <a href="#contact" class="footer-cta">Contact Us →</a>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Ramora Technologies Pvt Ltd — All Rights Reserved.</p>
+      </div>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

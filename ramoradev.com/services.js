@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
       iot: {
         title: 'Smart IoT Device Development',
-        image: 'images/iot.jpg',
+        image: 'images/iot.webp',
         subtitle: 'Complete IoT solutions, including device design and cloud integration.',
         overview: 'Connecting devices. Powering decisions.',
         overviewsub: 'From prototype to production-scale IoT',

@@ -176,6 +176,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+   // FAST: Immediately show filtered items
+portfolioItems.forEach(item => {
+    if (!item.classList.contains("hidden")) {
+        requestAnimationFrame(() => item.classList.add("show"));
+    }
+});
 
     // ===========================================
     // 6. CONTACT FORM SUBMISSION
@@ -515,3 +521,61 @@ document.addEventListener("DOMContentLoaded", () => {
   
   });
   
+
+/* -------------------------
+  Small animation helpers:
+  - IntersectionObserver to toggle .inview on .animate-on-scroll
+  - lightweight mouse parallax on hero media
+  Paste at end of script.js
+  --------------------------*/
+
+  (function(){
+    // IntersectionObserver for reveal
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('inview');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+  
+    document.querySelectorAll('.animate-on-scroll').forEach(el => io.observe(el));
+  
+    // Parallax / tilt for hero media
+    const media = document.getElementById('conceptMedia');
+    if (media) {
+      const limit = 12; // px movement
+      const scale = 0.01;
+      media.addEventListener('mousemove', (ev)=>{
+        const rect = media.getBoundingClientRect();
+        const cx = rect.left + rect.width/2;
+        const cy = rect.top + rect.height/2;
+        const dx = (ev.clientX - cx) / rect.width;
+        const dy = (ev.clientY - cy) / rect.height;
+        // gentle translate/rotate
+        const tx = dx * limit;
+        const ty = dy * limit;
+        const r = dx * 3;
+        media.style.transform = `translateY(${ -ty * 0.6 }px) rotate(${r}deg)`;
+        // micro tilt the image inside for depth
+        const img = media.querySelector('img');
+        if (img) img.style.transform = `translate(${ -tx * 0.2 }px, ${ -ty * 0.2 }px) rotate(${ -r*0.2 }deg)`;
+      });
+      // reset on leave
+      media.addEventListener('mouseleave', ()=> {
+        media.style.transform = '';
+        const img = media.querySelector('img');
+        if (img) img.style.transform = '';
+      });
+    }
+  })();
+  
+// FAQ Toggle
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  item.querySelector(".faq-question").addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
